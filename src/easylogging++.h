@@ -495,7 +495,7 @@ namespace type {
 #  if defined ELPP_CUSTOM_COUT
 #    define ELPP_COUT ELPP_CUSTOM_COUT
 #  else
-#    define ELPP_COUT std::wcout
+#    define ELPP_COUT std::wcerr
 #  endif  // defined ELPP_CUSTOM_COUT
 typedef wchar_t char_t;
 typedef std::wstring string_t;
@@ -508,7 +508,7 @@ typedef std::wostream ostream_t;
 #  if defined ELPP_CUSTOM_COUT
 #    define ELPP_COUT ELPP_CUSTOM_COUT
 #  else
-#    define ELPP_COUT std::cout
+#    define ELPP_COUT std::cerr
 #  endif  // defined ELPP_CUSTOM_COUT
 typedef char char_t;
 typedef std::string string_t;
